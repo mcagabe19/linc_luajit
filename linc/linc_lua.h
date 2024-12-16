@@ -1,6 +1,6 @@
 #pragma once
 
-#include <hxcpp.h>
+#include "hxcpp.h"
 #include <hx/CFFI.h>
 
 #include <sstream>
@@ -42,14 +42,6 @@ namespace linc {
         extern ::String optstring(lua_State *L, int n, const char *d);
         extern ::String ltypename(lua_State *L, int idx);
         extern void error(lua_State *L, const char* fmt);
-
-    }
-
-    namespace helpers {
-
-        extern int setErrorHandler(lua_State *L);
-        extern void register_hxtrace_func(HxTraceFN fn);
-        extern void register_hxtrace_lib(lua_State* L);
 
     }
 
