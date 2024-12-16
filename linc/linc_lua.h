@@ -12,7 +12,6 @@ namespace linc {
 
     typedef ::cpp::Function < int(::cpp::Reference<lua_State>, ::String) > luaCallbackFN;
     // typedef ::cpp::Function < int(::cpp::Pointer<lua_State>, ::String) > luaCallbackFN;
-    typedef ::cpp::Function < int(String) > HxTraceFN;
 
     namespace lua {
 
